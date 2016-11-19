@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Are you currently in the UK?
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="nationality">Back</a>
+
+      <h1 class="heading-large">
+        Are you currently in the UK?
+      </h1>
+
+      <form class="form" action="currently-in-the-uk" method="post">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Are you currently in the UK?</legend>
+
+            <label for="currently_in_the_uk_yes" class="block-label">
+              <input type="radio" name="currently_in_the_uk" value="yes" id="currently_in_the_uk_yes">
+              Yes
+            </label>
+
+            <label for="currently_in_the_uk_no" class="block-label">
+              <input type="radio" name="currently_in_the_uk" value="no" id="currently_in_the_uk_no">
+              No
+            </label>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

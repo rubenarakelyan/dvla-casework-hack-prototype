@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Do you have any children?
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="postcode">Back</a>
+
+      <h1 class="heading-large">
+        Do you have any children?
+      </h1>
+
+      <form class="form" action="have-any-children" method="post">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Do you have any children?</legend>
+
+            <label for="have_any_children_yes" class="block-label">
+              <input type="radio" name="have_any_children" value="yes" id="have_any_children_yes">
+              Yes
+            </label>
+
+            <label for="have_any_children_no" class="block-label">
+              <input type="radio" name="have_any_children" value="no" id="have_any_children_no">
+              No
+            </label>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

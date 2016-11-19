@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  How many children do you have?
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="have-any-children">Back</a>
+
+      <h1 class="heading-large">
+        How many children do you have?
+      </h1>
+
+      <form class="form" action="children-how-old" method="get">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="how_many_children">Number of children</label>
+          <input class="form-control" id="how_many_children" type="number" pattern="[0-9]*" min="1" max="10" style="width: 50px">
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

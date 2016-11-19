@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li>{% if serviceName %} {{ serviceName }} {% endif %}</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Services you can access
+      </h1>
+
+      <p>Based on the information you've given, you can access these services:</p>
+
+      <p>
+        <a class="button button-large" href="https://www.croydon.gov.uk/education/schools-new" role="button">Apply to a school in your area</a>
+        <a class="button button-large" href="http://www.nhs.uk/service-search/GP/CR0-4FG/Results/4/-0.115026026964188/51.3736190795898/4/0?distance=25" role="button">Register with a local GP</a>
+        <a class="button button-large" href="apply-universal-credit" role="button">Apply for Universal Credit</a>
+      </p>
+
+      <p>You can also get information and advice from these external organisations:</p>
+
+      <p>
+        <a class="button button-large" href="https://sdodemo-main-1566cce3d1a-1577aac4cc4.force.com/audiophiles/s/?tabset-c3137=1&tabset-56ef5=1" role="button">South Africans in the UK</a>
+        <a class="button button-large" href="#" role="button">Croydon Kids</a>
+        <a class="button button-large" href="https://www.citizensadvice.org.uk/" role="button">Citizens Advice</a>
+      </p>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

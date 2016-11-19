@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  My Vault
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://www.gov.uk">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        GOV.UK My Vault
+      </h1>
+
+      <p>Universal Credit would like to access the following information about you to continue your application:</p>
+
+      <ul class="list list-bullet">
+        <li>Information that identifies you (for example, your name)</li>
+        <li>Your contact details (for example, your address and telephone number)</li>
+        <li>Your employment details (for example, the name of your employer)</li>
+        <li>Your health details (for example, whether you have a disability)</li>
+        <li>Your immigration status (for example, whether you need to pay for certain services)</li>
+      </ul>
+
+      <p>Would you like to provide access to this information?</p>
+
+      <p>
+        <a class="button" href="#" role="button">Yes, provide access</a>
+        &nbsp;<a href="#">No, don't provide access</a>
+      </p>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

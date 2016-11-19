@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  What is your nationality?
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/">Back</a>
+
+      <h1 class="heading-large">
+        What is your nationality?
+      </h1>
+
+      <form class="form" action="currently-in-the-uk" method="get">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="nationality">Nationality</label>
+          <p class="form-hint">As shown on your passport</p>
+          <input type="text" class="form-control" id="nationality">
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
